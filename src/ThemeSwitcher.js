@@ -12,11 +12,12 @@ const ThemeSwitcher = ({ currentTheme, setTheme, sx }) => {
             variant="outlined"
             margin="normal"
             sx={{
+                maxWidth: "400px",
                 ...sx,
             }}
         >
             <InputLabel>Theme</InputLabel>
-            <Select value={currentTheme} onChange={handleChange} label="Theme" color='primary'>
+            <Select value={currentTheme} onChange={handleChange} label="Theme">
                 <MenuItem value="sequoia">Sequoia</MenuItem>
                 <MenuItem value="apollo">Apollo</MenuItem>
                 <MenuItem value="masculinePastel">Masculine Pastel</MenuItem>

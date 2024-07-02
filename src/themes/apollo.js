@@ -1,6 +1,5 @@
 const apolloTheme = {
     palette: {
-        mode: 'dark',
         primary: {
             main: '#9DE720',
         },

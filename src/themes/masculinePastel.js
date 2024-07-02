@@ -1,6 +1,5 @@
 const masculinePastelTheme = {
     palette: {
-        mode: 'light',
         primary: {
             main: '#7898AB',
         },

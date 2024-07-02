@@ -4,7 +4,7 @@ import {
     TableSortLabel, TablePagination, Checkbox, Typography, Toolbar
 } from '@mui/material';
 
-const SuperHeroesTable = () => {
+const TablePage = () => {
     const [order, setOrder] = useState('asc');
     const [orderBy, setOrderBy] = useState('name');
     const [selected, setSelected] = useState([]);
@@ -192,4 +192,4 @@ const SuperHeroesTable = () => {
     );
 };
 
-export default SuperHeroesTable;
+export default TablePage;

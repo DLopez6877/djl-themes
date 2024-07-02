@@ -1,6 +1,5 @@
 const sequoiaTheme = {
     palette: {
-        mode: 'light',
         primary: {
             main: '#6F7163',
         },
@@ -54,17 +53,28 @@ const sequoiaTheme = {
             },
         },
         MuiTableSortLabel: {
-            icon: {
-                color: '#13950c',
-                '&.Mui-active': {
+            styleOverrides: {
+                icon: {
                     color: '#13950c',
+                    '&.Mui-active': {
+                        color: '#13950c',
+                    },
                 },
-            },
-            root: {
-                '&.Mui-active .MuiTableSortLabel-icon': {
-                    color: '#13950c',
+                root: {
+                    '&.Mui-active .MuiTableSortLabel-icon': {
+                        color: '#13950c',
+                    },
                 },
-            },
+            }
+        },
+        MuiTableCell: {
+            styleOverrides: {
+                root: {
+                    '&:not(.MuiTableCell-paddingCheckbox)': {
+                        paddingBottom: '12px',
+                    }
+                },
+            }
         },
     },
 };
